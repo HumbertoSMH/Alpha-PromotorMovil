@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="30dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="mx.com.algroup.promotormovil.controller.DetalleProductoActivity">
+
+    <TextView
+        android:id="@+id/tiendaTexView"
+        android:text="WALMART TOREO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tituloDetalleProductoTextView"
+        android:text="Captura de Producto:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/tiendaTexView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/nombreLabelProductoTextView"
+        android:text="Descripción:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/precioTiendaLabelTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/nombreProductoEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nombreLabelProductoTextView"
+        android:layout_alignLeft="@+id/precioTiendatextView"
+        android:layout_alignStart="@+id/precioTiendatextView"
+        android:textSize="12dp"
+        android:hint="Descripcion del producto" />
+
+    <TextView
+        android:id="@+id/precioTiendaLabelTextView"
+        android:text="Precio:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stockEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/precioTiendatextView"
+        android:text="$ 5.00"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/precioTiendaLabelTextView"
+        android:layout_marginLeft="100dp" />
+
+    <TextView
+        android:id="@+id/stockTextView"
+        android:text="Existencia:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/precioRealEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/stockEditText"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignBottom="@+id/stockTextView"
+        android:layout_marginLeft="100dp" />
+
+    <TextView
+        android:id="@+id/precioRealTextView"
+        android:text="Precio:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/numFrenteEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/precioRealEditText"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_alignBottom="@+id/precioRealTextView"
+        android:layout_marginLeft="100dp" />
+
+
+    <CheckBox
+        android:id="@+id/precioCheckBox"
+        android:text="Mismo Precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:layout_alignBottom="@+id/precioRealEditText"
+        android:layout_marginLeft="225dp" />
+
+    <TextView
+        android:id="@+id/numFrenteTextView"
+        android:text="Número de Frente:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/exhibicionTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="36dp" />
+
+    <EditText
+        android:id="@+id/numFrenteEditText"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignBottom="@+id/numFrenteTextView"
+        android:layout_marginLeft="150dp"/>
+
+    <TextView
+        android:id="@+id/exhibicionTextView"
+        android:text="Exhibición Adicional:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cancelarCapturarCodigobutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="57dp" />
+
+    <Spinner
+        android:id="@+id/motivoRetiroSpinner"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/exhibicionTextView"
+        android:layout_marginLeft="150dp" />
+
+    <Button
+        android:id="@+id/cancelarCapturarCodigobutton"
+        android:text="Cancelar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/eliminarCapturarCodigobutton"
+        android:text="Eliminar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/continuarCapturarCodigobutton"
+        android:text="Guardar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cancelarCapturarCodigobutton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <Button
+        android:id="@+id/editarCapturabutton"
+        android:text="Editar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cancelarCapturarCodigobutton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/actualizarCapturabutton"
+        android:text="Actualizar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cancelarCapturarCodigobutton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/codigoProductotextView"
+        android:text="123ABC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tituloDetalleProductoTextView"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+</RelativeLayout>

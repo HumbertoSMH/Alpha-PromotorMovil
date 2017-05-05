@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="mx.com.algroup.promotormovil.controller.FirmaDeptoActivity">
+
+    <TextView
+        android:id="@+id/tiendaTexView"
+        android:text="WALMART TOREO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tituloFirmaDeptoTextView"
+        android:text="Firma Jefe Departamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tiendaTexView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/nombreJefeDeptoTextView"
+        android:text="Nombre:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tituloFirmaDeptoTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/nombreJefeDeptoEditText"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_alignBottom="@+id/nombreJefeDeptoTextView"
+        android:layout_marginLeft="70dp" />
+
+
+    <TextView
+        android:id="@+id/firmaJefeDeptoTextView"
+        android:text="Firma:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombreJefeDeptoTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp" />
+
+    <LinearLayout android:id="@+id/linearLayout1"
+        android:layout_width="300dp" android:layout_height="200dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:layout_alignRight="@+id/cerraReporteButton"
+        android:layout_alignEnd="@+id/cerraReporteButton"
+        android:layout_below="@+id/firmaJefeDeptoTextView"
+        android:layout_above="@+id/salirFirmaDeptoButton">
+        <LinearLayout android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2" android:layout_width="match_parent">
+            <Button android:layout_height="50dp" android:layout_weight=".35"
+                android:text="Limpiar" android:layout_width="0dp" android:id="@+id/clear" />
+        </LinearLayout>
+        <LinearLayout android:layout_height="match_parent"
+            android:id="@+id/linearLayout" android:layout_width="match_parent"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/salirFirmaDeptoButton"
+        android:text="Salir"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <Button
+        android:id="@+id/cerraReporteButton"
+        android:text="Cerrar Reporte"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/salirFirmaDeptoButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
+
+</RelativeLayout>

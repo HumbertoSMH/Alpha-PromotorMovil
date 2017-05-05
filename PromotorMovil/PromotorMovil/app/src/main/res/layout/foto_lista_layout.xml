@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="mx.com.algroup.promotormovil.controller.FotoListaActivity">
+
+    <TextView
+        android:id="@+id/tiendaTexView"
+        android:text="WALMART TOREO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tituloFotografiasTextView"
+        android:text="Fotografias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tiendaTexView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/capturarFotoButton"
+        android:text="Capturar Fotografia"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tituloFotografiasTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <ListView
+        android:id="@+id/fotografiasListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/capturarFotoButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/cancelarFotoButton" />
+
+    <Button
+        android:id="@+id/cancelarFotoButton"
+        android:text="Cancelar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+    <Button
+        android:id="@+id/guardarFotoButton"
+        android:text="Guardar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cancelarFotoButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+
+</RelativeLayout>

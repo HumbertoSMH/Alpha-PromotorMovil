@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="mx.com.algroup.promotormovil.controller.CapturarCodigoActivity">
+
+    <TextView
+        android:id="@+id/tiendaTexView"
+        android:text="WALMART TOREO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tituloCapturarCodigoTextView"
+        android:text="Comentarios Adicionales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tiendaTexView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/mensajeErrorCapturarCodigoTextView"
+        android:text="Error en el código"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_below="@+id/tituloCapturarCodigoTextView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffff4032" />
+
+    <EditText
+        android:id="@+id/codigoEditText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="123abc"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/tituloCapturarCodigoTextView"
+        android:layout_centerHorizontal="true"
+        android:maxLength="25" />
+
+    <Button
+        android:id="@+id/guardarProductobutton"
+        android:text="Guardar producto"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/mensajeErrorCapturarCodigoTextView"
+        android:layout_alignRight="@+id/codigoEditText"
+        android:layout_alignEnd="@+id/codigoEditText"
+        android:layout_alignLeft="@+id/codigoEditText"
+        android:layout_alignStart="@+id/codigoEditText" />
+
+    <Button
+        android:id="@+id/cancelarCapturarCodigobutton"
+        android:text="Cancelar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+    <Button
+        android:id="@+id/continuarCapturarCodigobutton"
+        android:text="Continuar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cancelarCapturarCodigobutton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+
+
+
+</RelativeLayout>
